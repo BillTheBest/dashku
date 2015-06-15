@@ -29,7 +29,7 @@
     "qs": "3.1.0",
     "redis": "0.12.1",
     "request": "2.57.0",
-    "socketstream": "0.3.12",
+    "socketstream": "0.4.3",
     "ss-coffee": "0.1.x",
     "ss-hogan": "0.1.x",
     "ss-jade": "0.1.x",
