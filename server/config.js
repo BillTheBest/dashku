@@ -11,7 +11,6 @@ if (process.env.REDISCLOUD_URL) {
 }
 
 
-
 module.exports = {
 
 	development: {
@@ -80,8 +79,8 @@ module.exports = {
 		port: process.env.PORT || 3000,
 		db: process.env.MONGODB_URL || 'mongodb://' + process.env.MONGO_1_PORT_27017_TCP_ADDR + ':' + process.env.MONGO_1_PORT_27017_TCP_PORT + '/dashku_docker',
 		redis: {
-			port: process.env.REDIS_PORT || process.env.REDIS_PORT_6379_TCP_PORT,
-			host: process.env.REDIS_HOST || process.env.REDIS_PORT_6379_TCP_ADDR
+			port: process.env.REDIS_PORT_6379_TCP_PORT,
+			host: process.env.REDIS_PORT_6379_TCP_ADDR
 		},
 		apiUrl: 'http://localhost:3000/api/transmission',
 		apiHost: 'http://localhost:3000/',
