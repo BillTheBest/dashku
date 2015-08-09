@@ -69,6 +69,10 @@ You can seed Dashku's database with widget templates by running this command:
 
     npm run populateWidgetTemplates
 
+If using docker-compose then run the following:
+
+    docker-compose run web npm run populateWidgetTemplates
+
 Using Dashku to create dashboards and widgets
 ---
 
