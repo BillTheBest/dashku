@@ -672,7 +672,7 @@ describe('Authentication', function () {
 			it('should return a failure status and explain what went wrong', function (done) {
 				ass.rpc('authentication.login', {identifier: 'paulbjensen@gmail.com', password: 'qwerty'}, function (res) {
 					assert.equal(res[0].status, 'success');
-					ass.rpc('authentication.changeEmail', {}, function (res) {
+					ass.rpc('authentication.changeEmail', {email: null}, function (res) {
 						assert.equal(res[0].status, 'failure');
 						assert.equal(res[0].reason, 'User validation failed');
 						done();
