@@ -34,7 +34,7 @@ ss.client.define('main', {
 	view  : 'app.jade',
 	css   : ['libs', 'app.styl'],
 	code  : codeLibDependencies,
-	tmpl  : '*'
+	tmpl: ['account','app','dashboard','dashboardView','docs','homepage','widget','alert.jade','changePasswordModal.jade','inputFieldError.jade','loginModal.jade','signupModal.jade']
 });
 
 
