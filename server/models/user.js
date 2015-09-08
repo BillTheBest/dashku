@@ -6,7 +6,7 @@
 
 // Dependencies
 //
-var bcrypt     = require('bcrypt');
+var bcrypt     = require('bcryptjs');
 var uuid       = require('node-uuid');
 var mongoose   = require('mongoose');
 

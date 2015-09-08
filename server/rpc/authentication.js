@@ -5,7 +5,7 @@
 
 // Dependencies
 //
-var bcrypt					= require('bcrypt');
+var bcrypt					= require('bcryptjs');
 var uuid					= require('node-uuid');
 var fs						= require('fs');
 
