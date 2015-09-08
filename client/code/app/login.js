@@ -28,7 +28,6 @@ $(document).on('shown', '#loginModal', function () {
 
 	$('#loginModal input[name="identifier"]').keyup(function () { checkLoginFormIsReady(); });
 	$('#loginModal input[name="password"]').keyup(function () { checkLoginFormIsReady(); });
-	checkLoginFormIsReady();
 });
 
 
