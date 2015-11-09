@@ -12,12 +12,12 @@
     "Stuart Quin (https://github.com/stuartquin)",
     "Joe Passavanti <gottaloveit@gmail.com>",
     "Maxime Beauchemin (https://github.com/mistercrunch)"
-  ],  
+  ],
   "engines": {
     "node": ">= 0.10.0"
   },
   "dependencies": {
-    "bcrypt": "0.8.3",
+    "bcryptjs": "^2.2.1",
     "body-parser": "1.12.4",
     "connect-route": "0.1.5",
     "markdown": "^0.5.0",

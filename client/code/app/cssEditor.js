@@ -6,10 +6,19 @@
 
 module.exports = {
 
+    isInit: false,
+
     // loads the css editor, and puts it on the page
     init: function (dashboard) {
+        if (this.isInit) {
+            this.scrollToSelf();
+            $('#cssEditor').clearQueue().fadeTo(200, 0.7).fadeTo(200, 1);
+            return;
+        }
+        this.isInit = true;
         this.dashboard = dashboard;
         $('body').append(ss.tmpl['dashboard-editor'].r());
+        this.scrollToSelf();
         $('#cssEditor').hide().fadeIn(500);
         this.setupDataStore();
         this.element().draggable({handle:'.header'}).css({
@@ -68,6 +77,13 @@ module.exports = {
         if (typeof cb === 'function') { cb(); }
     },
 
+    // scroll to css editor
+    scrollToSelf: function () {
+        $('html, body').animate({
+            scrollTop: $("#cssEditor").offset().top
+        }, 250);
+    },
+
     // Identifies any changes to the dashboard's css, and saves them if so
     identifyChanges: function (cb) {
         var changes = {};
@@ -78,6 +94,7 @@ module.exports = {
     // Close the editor, save any changes
     exit: function (cb) {
         var self = this;
+        self.isInit = false;
         self.identifyChanges(function (changes) {
             if (_.isEmpty(changes)) {
                 self.wrapItUp(cb);
