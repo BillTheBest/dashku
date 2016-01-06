@@ -1,3 +1,7 @@
+# DEPRECATED
+
+A new version of Dashku will be coming in the future. This version is redundant.
+
 [![Build Status](https://travis-ci.org/dashku/dashku.svg)](https://travis-ci.org/dashku/dashku)
 [![Coverage Status](https://coveralls.io/repos/dashku/dashku/badge.svg?branch=master)](https://coveralls.io/r/dashku/dashku?branch=master)
 [![Dependency Status](https://david-dm.org/dashku/dashku.svg)](https://david-dm.org/dashku/dashku)
